@@ -17,6 +17,17 @@ public class Labs {
         
         System.out.println("Welcome to basics");
         System.out.println("Name: " + name);
-        System.out.println("Age" + age);
+        System.out.println("Age: " + age);
+        
+        System.out.println(calculations());
+    }
+    
+    public static boolean calculations()
+    {
+        int x = 5, y = 8;
+        
+        boolean isEqual = (x == y);
+        
+        return isEqual;
     }
 }
