@@ -8,16 +8,22 @@ package com.justin.labs;
  *
  * @author 2403851
  */
+
+import java.util.Scanner;
+
 public class Labs {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
         
         double age = 18.5;
-        String name = "Justin";
         
-        System.out.println("Welcome to basics");
-        System.out.println("Name: " + name);
+        System.out.print("Enter your name: ");
+                String userName = scanner.nextLine();
+        
         System.out.println("Age: " + age);
+        System.out.println("Hello, " + userName + "!");
         
         System.out.println(calculations());
     }
