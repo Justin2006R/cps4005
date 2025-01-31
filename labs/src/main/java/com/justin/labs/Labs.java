@@ -25,6 +25,14 @@ public class Labs {
         System.out.println("Age: " + age);
         System.out.println("Hello, " + userName + "!");
         
+        if (age > 18)
+        {
+            System.out.println("Adult");
+        }
+        else{
+            System.out.println(">18");
+        }
+        
         System.out.println(calculations());
     }
     
