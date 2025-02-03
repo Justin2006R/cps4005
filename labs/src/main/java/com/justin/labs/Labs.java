@@ -13,7 +13,12 @@ public class Labs {
 
     public static void main(String[] args) {        
         Car car1 = new Car("Red", "Small", "Mini", 2025, 5000);
+        
         car1.displayInfo();
+        
+        carsList listt = new carsList();
+        listt.addCar(car1);
+        listt.displayAllCars();
     }
     
     public static boolean calculations()
