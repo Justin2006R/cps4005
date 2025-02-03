@@ -9,31 +9,11 @@ package com.justin.labs;
  * @author 2403851
  */
 
-import java.util.Scanner;
-
 public class Labs {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        
-        double age = 18.5;
-        
-        System.out.print("Enter your name: ");
-                String userName = scanner.nextLine();
-        
-        System.out.println("Age: " + age);
-        System.out.println("Hello, " + userName + "!");
-        
-        if (age > 18)
-        {
-            System.out.println("Adult");
-        }
-        else{
-            System.out.println(">18");
-        }
-        
-        System.out.println(calculations());
+    public static void main(String[] args) {        
+        Car car1 = new Car("Red", "Small", "Mini", 2025, 5000);
+        car1.displayInfo();
     }
     
     public static boolean calculations()
