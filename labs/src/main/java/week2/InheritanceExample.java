@@ -12,10 +12,14 @@ public class InheritanceExample {
     
     public static void main(String[] args){
         
-        Circle myCircle =  new Circle("Red");
+        Circle myCircle =  new Circle("Red", 5);
+        Rectangle myRectangle =  new Rectangle(3.5, 5, "Red");
         
         myCircle.draw();
-        myCircle.calculateArea();
+        System.out.println(myCircle.calculateArea());
+        
+        myRectangle.draw();
+        System.out.println(myRectangle.calculateArea());
         
     }
     
