@@ -10,11 +10,17 @@ package week2;
  */
 public class Circle extends Shape{
     
-    public Circle(String colour){
+    double radius;
+    
+    public Circle(String colour, double radius){
         super(colour);
+        this.radius = radius;   
     }
     
-    public void calculateArea(){
+    public double calculateArea(){
+        
         System.out.println("Calculating Area");
+        return Math.PI* Math.pow(radius, 2);
+        
     }
 }
