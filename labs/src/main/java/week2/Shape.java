@@ -10,7 +10,13 @@ package week2;
  */
 public class Shape {
     
+    private String colour;
+    
+    public Shape(String colour){
+        this.colour = colour;
+    }
+    
     public void draw(){
-        System.out.println("Drawing Shape");
+        System.out.println("Drawing Shape with the colour: " + colour);
     }
 }
