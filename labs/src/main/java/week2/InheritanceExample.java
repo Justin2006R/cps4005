@@ -12,7 +12,7 @@ public class InheritanceExample {
     
     public static void main(String[] args){
         
-        Circle myCircle =  new Circle();
+        Circle myCircle =  new Circle("Red");
         
         myCircle.draw();
         myCircle.calculateArea();
