@@ -10,6 +10,10 @@ package week2;
  */
 public class Circle extends Shape{
     
+    public Circle(String colour){
+        super(colour);
+    }
+    
     public void calculateArea(){
         System.out.println("Calculating Area");
     }
