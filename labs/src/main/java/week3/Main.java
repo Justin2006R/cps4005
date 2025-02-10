@@ -30,5 +30,8 @@ public class Main {
         drawing.describeShape(square); 
         drawing.describeShape(triangle); 
         drawing.describeShape(colCircle);
+        
+        drawing.applyColor(circle, "Orange");
+        drawing.applyColor(colCircle, "Green");
     }
 }

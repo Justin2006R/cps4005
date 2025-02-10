@@ -20,4 +20,17 @@ public class Drawing {
     public void describeShape(Shape shape){
         System.out.println(shape.getDescription());
     }
+    
+    public void applyColor(Shape shape, String colour){
+        
+        if (shape instanceof ColoredCircle){
+            ColoredCircle coloredCircle = (ColoredCircle) shape;
+            coloredCircle.setColour(colour);
+            System.out.println("Set colour " + colour);
+        }
+        else{
+            System.out.println("Color can onlybe applied to ColouredCircle");
+        }
+        
+    }
 }

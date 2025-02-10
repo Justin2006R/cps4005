@@ -22,4 +22,8 @@ public class ColoredCircle extends Circle {
         return "This is a " + colour + " circle";
     }
     
+    public void setColour(String colour){
+        this.colour = colour;
+    }
+    
 }
