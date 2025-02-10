@@ -16,4 +16,8 @@ public class Drawing {
     public double calculateArea(Shape shape){
         return shape.area();
     }
+    
+    public void describeShape(Shape shape){
+        System.out.println(shape.getDescription());
+    }
 }

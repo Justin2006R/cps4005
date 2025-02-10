@@ -15,14 +15,20 @@ public class Main {
         
         Shape circle = new Circle(5.0);
         Shape square = new Square(4.0);
-        Shape triangle = new Triangle(6);
+        Shape triangle = new Triangle(5, 5);
+        Shape colCircle = new ColoredCircle(5, "Red");
         
-        drawing.drawShape(circle);  // Output: Drawing a circle
-        drawing.drawShape(square);  // Output: Drawing a square
-        drawing.drawShape(triangle); // Output: Drawing a triangle
+        drawing.drawShape(circle);  
+        drawing.drawShape(square);  
+        drawing.drawShape(triangle); 
         
-        System.out.println("Area of circle: " + drawing.calculateArea(circle));    // Output: Area of circle: 78.53981633974483
-        System.out.println("Area of square: " + drawing.calculateArea(square));    // Output: Area of square: 16.0
-        System.out.println("Area of triangle: " + drawing.calculateArea(triangle)); // Output: Area of triangle: 6.0
+        System.out.println("Area of circle: " + drawing.calculateArea(circle));   
+        System.out.println("Area of square: " + drawing.calculateArea(square));    
+        System.out.println("Area of triangle: " + drawing.calculateArea(triangle)); 
+        
+        drawing.describeShape(circle);  
+        drawing.describeShape(square); 
+        drawing.describeShape(triangle); 
+        drawing.describeShape(colCircle);
     }
 }

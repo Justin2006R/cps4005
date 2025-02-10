@@ -8,16 +8,18 @@ package week3;
  *
  * @author 2403851
  */
-public class Shape {
-    public void draw() {
-        System.out.println("Drawing a shape");
+public class ColoredCircle extends Circle {
+    
+    private String colour;
+    
+    public ColoredCircle(double radius, String colour){
+        super(radius);
+        this.colour = colour;
     }
     
-    public double area(){
-        return 0.0;
-    }
-    
+    @Override
     public String getDescription(){
-        return "This is a shape";
+        return "This is a " + colour + " circle";
     }
+    
 }
