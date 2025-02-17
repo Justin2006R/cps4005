@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package week4;
+
+/**
+ *
+ * @author 2403851
+ */
+public class Main {
+    public static void main(String[] args) {
+        Employee manager = new Manager("Jess", 101);
+        Employee engineer = new Engineer("Joe", 102);
+
+        manager.work();
+        engineer.work();
+        
+        manager.displayInfo();
+        engineer.displayInfo();
+        
+        Contractor softwareCon = new SoftwareContractor("Jill", 201);
+        Contractor constructionCon = new ContructionContractor("Jack", 202);
+        
+        softwareCon.work();
+        constructionCon.work();
+    }
+}
