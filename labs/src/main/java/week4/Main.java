@@ -10,17 +10,17 @@ package week4;
  */
 public class Main {
     public static void main(String[] args) {
-        Employee manager = new Manager("Jess", 101);
-        Employee engineer = new Engineer("Joe", 102);
+        Employee manager = new Manager("Jess", 101, "Topic 1");
+        Employee engineer = new Engineer("Joe", 102, "Topic 2");
 
         manager.work();
         engineer.work();
-        
+             
         manager.displayInfo();
         engineer.displayInfo();
         
-        Contractor softwareCon = new SoftwareContractor("Jill", 201);
-        Contractor constructionCon = new ContructionContractor("Jack", 202);
+        Contractor softwareCon = new SoftwareContractor("Jill", 201, "Topic 1");
+        Contractor constructionCon = new ContructionContractor("Jack", 202, "Topic 2");
         
         softwareCon.work();
         constructionCon.work();

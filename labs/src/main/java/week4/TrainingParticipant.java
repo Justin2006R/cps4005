@@ -8,12 +8,6 @@ package week4;
  *
  * @author 2403851
  */
-abstract class Contractor extends Employee {
-    
-    public Contractor(String name, int employeeId, String trainingTop){
-        super(name, employeeId, trainingTop);
-    }
-    
-    public abstract void work();
-    
+public interface TrainingParticipant {
+    void participateInTraining(String trainingTop);
 }

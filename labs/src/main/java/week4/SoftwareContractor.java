@@ -10,8 +10,8 @@ package week4;
  */
 public class SoftwareContractor extends Contractor {
     
-    public SoftwareContractor(String name, int employeeId){
-        super(name, employeeId);
+    public SoftwareContractor(String name, int employeeId, String trainingTop){
+        super(name, employeeId, trainingTop);
     }
     
     @Override
